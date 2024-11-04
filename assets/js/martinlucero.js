@@ -40,5 +40,14 @@ $(window).on("load", function() {
     });
 });
 
+    document.addEventListener("DOMContentLoaded", function() {
+        var form = document.getElementById('contact-form');
+        
+        form.addEventListener('submit', function(event) {
+            setTimeout(function() {
+                form.reset();
+            }, 1000);
+        });
+    });
 
 
