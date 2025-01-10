@@ -11335,9 +11335,6 @@ p {
   }
 }
 
-.custom-map {
-  height: 400px;
-}
 
 pre {
   border: 2px solid #dee2e6;
@@ -11586,7 +11583,7 @@ pre .code {
 }
 
 .section {
-  padding: 80px 0;
+  padding: 8px 0;
 }
 
 .section.bg-custom-gray {
@@ -11626,7 +11623,7 @@ pre .code {
 
 @media (max-width: 991.98px) {
   .contact {
-    padding: 300px 0 0;
+    padding: 3px 0 0;
   }
   .contact .contact-form-card {
     border-bottom: 1px solid #dee2e6;
@@ -11637,13 +11634,6 @@ pre .code {
   }
 }
 
-.contact .map {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
 
 .contact .contact-form-card,
 .contact .contact-info-card {
