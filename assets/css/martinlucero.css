@@ -11424,7 +11424,6 @@ pre .code {
   opacity: 0;
   -webkit-transition: 1s;
   transition: 1s;
-  -weblit-transition: 1s;
   z-index: 1;
 }
 
@@ -11433,11 +11432,6 @@ pre .code {
   color: #888;
 }
 
-@media (max-width: 991.98px) {
-  .navbar .brand {
-    display: none;
-  }
-}
 
 .navbar.affix .brand-txt {
   bottom: 0;
@@ -11449,10 +11443,16 @@ pre .code {
   opacity: 0;
 }
 
+
+
+
+
 .pagination .page-item {
   margin: 0 4px;
   border-radius: 0;
 }
+
+
 
 .pagination .page-item:first-child, .pagination .page-item:last-child {
   margin-top: 3px;
@@ -11595,7 +11595,7 @@ pre .code {
 }
 
 .about-section .about-card {
-  padding: 60px;
+  padding: 30px;
   border-right: 1px solid #dee2e6;
 }
 
@@ -11657,4 +11657,15 @@ pre .code {
   background: #F85C70;
   display: block;
   margin-top: 10px;
+}
+
+
+@media (max-width: 767.98px) {
+  .header {
+    height: 500px; /* Ajusta la altura en móviles */
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imgs/header.jpg);
+    background-size: cover; /* Ocupa todo el espacio disponible */
+    background-position: center;
+    background-attachment: scroll; /* Mejora el rendimiento en móviles */
+  }
 }
