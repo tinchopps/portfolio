@@ -50,4 +50,24 @@ $(window).on("load", function() {
         });
     });
 
+    window.addEventListener('scroll', function() {
+        const languageSwitcher = document.querySelector('.language-switcher');
+        const header = document.querySelector('.header');
+        
+        // Calcular la opacidad en función del desplazamiento vertical de la página
+        let opacityValue = 1 - window.scrollY / header.offsetHeight; // La opacidad disminuirá a medida que haces scroll
+        
+        // Asegúrate de que la opacidad no sea menor a 0
+        if (opacityValue < 0) {
+            opacityValue = 0;
+        }
+        
+        // Aplicar la opacidad calculada
+        languageSwitcher.style.transition = 'opacity 0.3s ease-out'; // Transición suave
+        languageSwitcher.style.opacity = opacityValue; // Cambiar la opacidad
+    });
+    
+    
+    
+
 

@@ -11403,7 +11403,7 @@ pre .code {
 .navbar .brand .brand-img {
   position: absolute;
   left: 50%;
-  top: 15%;
+  top: 5%;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -11595,7 +11595,7 @@ pre .code {
 }
 
 .about-section .about-card {
-  padding: 30px;
+  padding: 58px;
   border-right: 1px solid #dee2e6;
 }
 
@@ -11658,6 +11658,56 @@ pre .code {
   display: block;
   margin-top: 10px;
 }
+
+
+
+
+
+
+.language-switcher {
+  display: flex;
+  flex-direction: column; /* Las banderas estarán apiladas verticalmente */
+  gap: 10px; /* Espacio entre las banderas */
+  justify-content: flex-start; /* Alineación al inicio del contenedor */
+  align-items: center; /* Centrado de las banderas horizontalmente */
+  position: fixed; /* Fija las banderas en la pantalla */
+  top: 10px; /* Ajusta la posición de las banderas desde la parte superior */
+  right: 10px; /* Ajusta la posición de las banderas a la derecha */
+  z-index: 1000; /* Asegura que las banderas estén por encima de otros elementos */
+  max-height: 100%; /* Asegura que no se corte el contenedor */
+  overflow: visible; /* Hace que el contenedor sea más flexible con el tamaño */
+}
+
+.language-switcher .fi {
+  font-size: 2rem;
+  margin: 5px; /* Ajusta el espacio entre las banderas */
+}
+
+.social-icons {
+  display: flex;
+  align-items: center; /* Centrado de los íconos de las redes sociales */
+}
+
+
+
+
+@media (max-width: 768px) {
+  .language-switcher {
+    top: 10px; /* Asegura que las banderas estén accesibles en pantallas pequeñas */
+    right: 10px;
+    gap: 5px; /* Reduce el espacio entre las banderas en pantallas pequeñas */
+  }
+}
+
+@media (max-width: 480px) {
+  .language-switcher {
+    top: 10px; /* Asegura que las banderas estén accesibles en pantallas pequeñas */
+    right: 10px;
+    gap: 5px; /* Reduce el espacio entre las banderas en pantallas pequeñas */
+  }
+}
+
+
 
 
 @media (max-width: 767.98px) {
